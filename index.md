@@ -1,6 +1,6 @@
 # BBH Simulation Results
 
-Explore detector network simulations below:
+Select a detector network:
 
 - [EC](ec.md)
 - [HLV](hlv.md)

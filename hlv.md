@@ -5,11 +5,11 @@
 ---
 
 
-<details style=''>
+<details>
 <summary><strong>1000mpc</strong></summary>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_10.0_m2_10.0</strong></summary>
+  <details>
+  <summary><strong>m1_10.0_m2_10.0</strong></summary>
 
 <img src="plots/HLV/1000mpc/m1_10.0_m2_10.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_10.0_m2_10.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -24,10 +24,10 @@
 <img src="plots/HLV/1000mpc/m1_10.0_m2_10.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_10.0_m2_10.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_20.0_m2_20.0</strong></summary>
+  <details>
+  <summary><strong>m1_20.0_m2_20.0</strong></summary>
 
 <img src="plots/HLV/1000mpc/m1_20.0_m2_20.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_20.0_m2_20.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -42,10 +42,10 @@
 <img src="plots/HLV/1000mpc/m1_20.0_m2_20.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_20.0_m2_20.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_30.0_m2_30.0</strong></summary>
+  <details>
+  <summary><strong>m1_30.0_m2_30.0</strong></summary>
 
 <img src="plots/HLV/1000mpc/m1_30.0_m2_30.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_30.0_m2_30.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -60,10 +60,10 @@
 <img src="plots/HLV/1000mpc/m1_30.0_m2_30.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_30.0_m2_30.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_40.0_m2_40.0</strong></summary>
+  <details>
+  <summary><strong>m1_40.0_m2_40.0</strong></summary>
 
 <img src="plots/HLV/1000mpc/m1_40.0_m2_40.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_40.0_m2_40.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -78,10 +78,10 @@
 <img src="plots/HLV/1000mpc/m1_40.0_m2_40.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_40.0_m2_40.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_5.0_m2_5.0</strong></summary>
+  <details>
+  <summary><strong>m1_5.0_m2_5.0</strong></summary>
 
 <img src="plots/HLV/1000mpc/m1_5.0_m2_5.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_5.0_m2_5.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -96,10 +96,10 @@
 <img src="plots/HLV/1000mpc/m1_5.0_m2_5.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_5.0_m2_5.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_50.0_m2_50.0</strong></summary>
+  <details>
+  <summary><strong>m1_50.0_m2_50.0</strong></summary>
 
 <img src="plots/HLV/1000mpc/m1_50.0_m2_50.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_50.0_m2_50.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -114,16 +114,16 @@
 <img src="plots/HLV/1000mpc/m1_50.0_m2_50.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/1000mpc/m1_50.0_m2_50.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
 </details>
 
 
-<details style=''>
+<details>
 <summary><strong>500mpc</strong></summary>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_10.0_m2_10.0</strong></summary>
+  <details>
+  <summary><strong>m1_10.0_m2_10.0</strong></summary>
 
 <img src="plots/HLV/500mpc/m1_10.0_m2_10.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_10.0_m2_10.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -138,10 +138,10 @@
 <img src="plots/HLV/500mpc/m1_10.0_m2_10.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_10.0_m2_10.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_20.0_m2_20.0</strong></summary>
+  <details>
+  <summary><strong>m1_20.0_m2_20.0</strong></summary>
 
 <img src="plots/HLV/500mpc/m1_20.0_m2_20.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_20.0_m2_20.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -156,10 +156,10 @@
 <img src="plots/HLV/500mpc/m1_20.0_m2_20.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_20.0_m2_20.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_30.0_m2_30.0</strong></summary>
+  <details>
+  <summary><strong>m1_30.0_m2_30.0</strong></summary>
 
 <img src="plots/HLV/500mpc/m1_30.0_m2_30.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_30.0_m2_30.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -174,10 +174,10 @@
 <img src="plots/HLV/500mpc/m1_30.0_m2_30.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_30.0_m2_30.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_40.0_m2_40.0</strong></summary>
+  <details>
+  <summary><strong>m1_40.0_m2_40.0</strong></summary>
 
 <img src="plots/HLV/500mpc/m1_40.0_m2_40.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_40.0_m2_40.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -192,10 +192,10 @@
 <img src="plots/HLV/500mpc/m1_40.0_m2_40.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_40.0_m2_40.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_5.0_m2_5.0</strong></summary>
+  <details>
+  <summary><strong>m1_5.0_m2_5.0</strong></summary>
 
 <img src="plots/HLV/500mpc/m1_5.0_m2_5.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_5.0_m2_5.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -210,10 +210,10 @@
 <img src="plots/HLV/500mpc/m1_5.0_m2_5.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_5.0_m2_5.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_50.0_m2_50.0</strong></summary>
+  <details>
+  <summary><strong>m1_50.0_m2_50.0</strong></summary>
 
 <img src="plots/HLV/500mpc/m1_50.0_m2_50.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_50.0_m2_50.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -228,16 +228,16 @@
 <img src="plots/HLV/500mpc/m1_50.0_m2_50.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/500mpc/m1_50.0_m2_50.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
 </details>
 
 
-<details style=''>
+<details>
 <summary><strong>750mpc</strong></summary>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_10.0_m2_10.0</strong></summary>
+  <details>
+  <summary><strong>m1_10.0_m2_10.0</strong></summary>
 
 <img src="plots/HLV/750mpc/m1_10.0_m2_10.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_10.0_m2_10.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -252,10 +252,10 @@
 <img src="plots/HLV/750mpc/m1_10.0_m2_10.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_10.0_m2_10.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_20.0_m2_20.0</strong></summary>
+  <details>
+  <summary><strong>m1_20.0_m2_20.0</strong></summary>
 
 <img src="plots/HLV/750mpc/m1_20.0_m2_20.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_20.0_m2_20.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -270,10 +270,10 @@
 <img src="plots/HLV/750mpc/m1_20.0_m2_20.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_20.0_m2_20.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_30.0_m2_30.0</strong></summary>
+  <details>
+  <summary><strong>m1_30.0_m2_30.0</strong></summary>
 
 <img src="plots/HLV/750mpc/m1_30.0_m2_30.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_30.0_m2_30.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -288,10 +288,10 @@
 <img src="plots/HLV/750mpc/m1_30.0_m2_30.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_30.0_m2_30.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_40.0_m2_40.0</strong></summary>
+  <details>
+  <summary><strong>m1_40.0_m2_40.0</strong></summary>
 
 <img src="plots/HLV/750mpc/m1_40.0_m2_40.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_40.0_m2_40.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -306,10 +306,10 @@
 <img src="plots/HLV/750mpc/m1_40.0_m2_40.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_40.0_m2_40.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_5.0_m2_5.0</strong></summary>
+  <details>
+  <summary><strong>m1_5.0_m2_5.0</strong></summary>
 
 <img src="plots/HLV/750mpc/m1_5.0_m2_5.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_5.0_m2_5.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -324,10 +324,10 @@
 <img src="plots/HLV/750mpc/m1_5.0_m2_5.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_5.0_m2_5.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
-<details style='margin-left: 10px;'>
-<summary><strong>m1_50.0_m2_50.0</strong></summary>
+  <details>
+  <summary><strong>m1_50.0_m2_50.0</strong></summary>
 
 <img src="plots/HLV/750mpc/m1_50.0_m2_50.0/2dcrossmatch-1.png" alt="2dcrossmatch-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_50.0_m2_50.0/2dcrossmatch.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
@@ -342,6 +342,6 @@
 <img src="plots/HLV/750mpc/m1_50.0_m2_50.0/skymap-1.png" alt="skymap-1.png" width="700px" style="margin-bottom: 20px; border: 1px solid #ccc; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 <embed src="plots/HLV/750mpc/m1_50.0_m2_50.0/skymap.pdf" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />
 
-</details>
+  </details>
 
 </details>
