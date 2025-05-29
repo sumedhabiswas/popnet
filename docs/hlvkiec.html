@@ -29,10 +29,12 @@
     .nav-link {
       cursor: pointer;
     }
+    .tab-content {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">BBH Simulation</a>
@@ -41,21 +43,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ec.html">EC Network</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="hlv.html">HLV Network</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="hlvkiec.html">HLVKIEC Network</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="network_comparison.html">Network Comparison</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="ec.html">EC Network</a></li>
+          <li class="nav-item"><a class="nav-link" href="hlv.html">HLV Network</a></li>
+          <li class="nav-item"><a class="nav-link active" href="hlvkiec.html">HLVKIEC Network</a></li>
+          <li class="nav-item"><a class="nav-link" href="network_comparison.html">Network Comparison</a></li>
         </ul>
       </div>
     </div>
@@ -63,22 +55,19 @@
 
   <div class="container-fluid">
     <div class="row">
-      <!-- Sidebar -->
       <div class="col-md-3 sidebar">
         <h4>HLVKIEC</h4>
         <h5>500 Mpc</h5>
         <ul class="nav flex-column">
           <li class="nav-item"><a class="nav-link" href="#overview-500">Overview</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mass-50_50">50+50 ⟶ Skymap</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mass-40_40">40+40 ⟶ Skymap</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mass-30_30">30+30 ⟶ Skymap</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mass-20_20">20+20 ⟶ Skymap</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mass-10_10">10+10 ⟶ Skymap</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mass-5_5">5+5 ⟶ Skymap</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mass-50_50">50+50</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mass-40_40">40+40</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mass-30_30">30+30</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mass-20_20">20+20</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mass-10_10">10+10</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mass-5_5">5+5</a></li>
         </ul>
       </div>
-
-      <!-- Main content -->
       <div class="col-md-9 content-area">
         <h3 id="overview-500">Overview – 500 Mpc</h3>
         <embed class="plot" src="plots/HLVKIEC/500mpc/host_to_mass_ratios.pdf" type="application/pdf" width="100%" height="600px" />
@@ -87,23 +76,26 @@
         <embed class="plot" src="plots/HLVKIEC/500mpc/sky_localization_areas.pdf" type="application/pdf" width="100%" height="600px" />
         <embed class="plot" src="plots/HLVKIEC/500mpc/theory_vs_observed_mass.pdf" type="application/pdf" width="100%" height="600px" />
 
-        <h3 id="mass-50_50">Skymap – 500 Mpc, 50+50</h3>
-        <img class="plot" src="plots/HLVKIEC/500mpc/50_50/skymap-1.png" alt="Skymap 50+50">
-
-        <h3 id="mass-40_40">Skymap – 500 Mpc, 40+40</h3>
-        <img class="plot" src="plots/HLVKIEC/500mpc/40_40/skymap-1.png" alt="Skymap 40+40">
-
-        <h3 id="mass-30_30">Skymap – 500 Mpc, 30+30</h3>
-        <img class="plot" src="plots/HLVKIEC/500mpc/30_30/skymap-1.png" alt="Skymap 30+30">
-
-        <h3 id="mass-20_20">Skymap – 500 Mpc, 20+20</h3>
-        <img class="plot" src="plots/HLVKIEC/500mpc/20_20/skymap-1.png" alt="Skymap 20+20">
-
-        <h3 id="mass-10_10">Skymap – 500 Mpc, 10+10</h3>
-        <img class="plot" src="plots/HLVKIEC/500mpc/10_10/skymap-1.png" alt="Skymap 10+10">
-
-        <h3 id="mass-5_5">Skymap – 500 Mpc, 5+5</h3>
-        <img class="plot" src="plots/HLVKIEC/500mpc/5_5/skymap-1.png" alt="Skymap 5+5">
+        <!-- Mass bin sections -->
+        <!-- Use JavaScript or a template to loop over mass bins and render tabs dynamically if automating -->
+        <!-- For brevity, this is a placeholder for one mass bin section: 50+50 -->
+        <h3 id="mass-50_50">500 Mpc – 50+50</h3>
+        <ul class="nav nav-tabs" id="tab-50_50" role="tablist">
+          <li class="nav-item" role="presentation"><button class="nav-link active" id="fim-50-tab" data-bs-toggle="tab" data-bs-target="#fim-50" type="button">FIM</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="corner-50-tab" data-bs-toggle="tab" data-bs-target="#corner-50" type="button">Corner Plot</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="marginals-50-tab" data-bs-toggle="tab" data-bs-target="#marginals-50" type="button">1D Marginals</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="skymap-50-tab" data-bs-toggle="tab" data-bs-target="#skymap-50" type="button">Skymap</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="cross2d-50-tab" data-bs-toggle="tab" data-bs-target="#cross2d-50" type="button">2D Crossmatch</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="cross3d-50-tab" data-bs-toggle="tab" data-bs-target="#cross3d-50" type="button">3D Crossmatch</button></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="fim-50"><img class="plot" src="plots/HLVKIEC/500mpc/50_50/fisher_m1_50.0_m2_50.0_fisher_matrix.png"><img class="plot" src="plots/HLVKIEC/500mpc/50_50/fisher_m1_50.0_m2_50.0_covariance_matrix.png"></div>
+          <div class="tab-pane fade" id="corner-50"><img class="plot" src="plots/HLVKIEC/500mpc/50_50/fisher_m1_50.0_m2_50.0_corner.png"></div>
+          <div class="tab-pane fade" id="marginals-50"><img class="plot" src="plots/HLVKIEC/500mpc/50_50/fisher_m1_50.0_m2_50.0_1d_marginals.png"><img class="plot" src="plots/HLVKIEC/500mpc/50_50/fisher_m1_50.0_m2_50.0_distance_theta_posterior.png"></div>
+          <div class="tab-pane fade" id="skymap-50"><img class="plot" src="plots/HLVKIEC/500mpc/50_50/fisher_m1_50.0_m2_50.0_radec_posterior.png"><img class="plot" src="plots/HLVKIEC/500mpc/50_50/skymap-1.png"></div>
+          <div class="tab-pane fade" id="cross2d-50"><img class="plot" src="plots/HLVKIEC/500mpc/50_50/2dcrossmatch-1.png"></div>
+          <div class="tab-pane fade" id="cross3d-50"><img class="plot" src="plots/HLVKIEC/500mpc/50_50/3dcrossmatch-1.png"></div>
+        </div>
       </div>
     </div>
   </div>
