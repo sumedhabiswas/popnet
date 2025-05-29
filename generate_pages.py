@@ -1,11 +1,9 @@
 import os
 
-# Configuration
 plots_dir = "plots"
 output_dir = "."
 image_exts = [".png", ".jpg", ".jpeg", ".pdf"]
 
-# Utilities
 def format_md_link(name):
     return name.replace(" ", "_").replace("/", "_").lower()
 
@@ -17,17 +15,17 @@ def make_markdown_header(title, back_link=True):
     return header
 
 def make_collapsible_section(title, content, level=0):
-    margin = "margin-left: 10px;" if level > 0 else ""
+    indent = "  " * level
     return (
-        f"<details style='{margin}'>\n"
-        f"<summary><strong>{title}</strong></summary>\n\n"
+        f"{indent}<details>\n"
+        f"{indent}<summary><strong>{title}</strong></summary>\n\n"
         f"{content}\n"
-        f"</details>\n"
+        f"{indent}</details>\n"
     )
 
 def embed_image(path):
     ext = os.path.splitext(path)[1].lower()
-    path = path.replace(" ", "%20")  # URL-safe
+    path = path.replace(" ", "%20")
     if ext == ".pdf":
         return f'<embed src="{path}" width="100%" height="600px" type="application/pdf" style="margin-bottom: 20px; border: 1px solid #ccc;" />\n'
     else:
@@ -35,7 +33,7 @@ def embed_image(path):
 
 def generate_network_md(network):
     network_dir = os.path.join(plots_dir, network)
-    markdown_lines = [make_markdown_header(network)]
+    lines = [make_markdown_header(network)]
 
     for dist in sorted(os.listdir(network_dir)):
         dist_path = os.path.join(network_dir, dist)
@@ -62,23 +60,23 @@ def generate_network_md(network):
             dist_sections.append(make_collapsible_section(mass, content, level=1))
 
         if dist_sections:
-            markdown_lines.append(make_collapsible_section(dist, "\n".join(dist_sections)))
+            lines.append(make_collapsible_section(dist, "\n".join(dist_sections)))
 
-    return "\n\n".join(markdown_lines)
+    return "\n\n".join(lines)
 
-# Generate homepage
+# Homepage
 networks = [d for d in sorted(os.listdir(plots_dir)) if os.path.isdir(os.path.join(plots_dir, d))]
-with open(os.path.join(output_dir, "index.md"), "w") as f:
+with open("index.md", "w") as f:
     f.write("# BBH Simulation Results\n\n")
-    f.write("Explore detector network simulations below:\n\n")
+    f.write("Select a detector network:\n\n")
     for net in networks:
-        link = format_md_link(net) + ".md"
-        f.write(f"- [{net}]({link})\n")
+        page = format_md_link(net) + ".md"
+        f.write(f"- [{net}]({page})\n")
 
-# Generate network-specific pages
+# Subpages
 for net in networks:
-    md_content = generate_network_md(net)
-    out_path = os.path.join(output_dir, format_md_link(net) + ".md")
-    with open(out_path, "w") as f:
-        f.write(md_content)
+    content = generate_network_md(net)
+    out_file = os.path.join(output_dir, format_md_link(net) + ".md")
+    with open(out_file, "w") as f:
+        f.write(content)
 
