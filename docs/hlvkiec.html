@@ -20,7 +20,7 @@
     .content-area {
       padding: 2rem;
     }
-    img.plot {
+    img.plot, embed.plot {
       max-width: 100%;
       border: 1px solid #ccc;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -68,6 +68,7 @@
         <h4>HLVKIEC</h4>
         <h5>500 Mpc</h5>
         <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="#overview-500">Overview</a></li>
           <li class="nav-item"><a class="nav-link" href="#mass-50_50">50+50 ⟶ Skymap</a></li>
           <li class="nav-item"><a class="nav-link" href="#mass-40_40">40+40 ⟶ Skymap</a></li>
           <li class="nav-item"><a class="nav-link" href="#mass-30_30">30+30 ⟶ Skymap</a></li>
@@ -79,6 +80,13 @@
 
       <!-- Main content -->
       <div class="col-md-9 content-area">
+        <h3 id="overview-500">Overview – 500 Mpc</h3>
+        <embed class="plot" src="plots/HLVKIEC/500mpc/host_to_mass_ratios.pdf" type="application/pdf" width="100%" height="600px" />
+        <embed class="plot" src="plots/HLVKIEC/500mpc/mass_residual_plot.pdf" type="application/pdf" width="100%" height="600px" />
+        <embed class="plot" src="plots/HLVKIEC/500mpc/num_galaxies_per_region.pdf" type="application/pdf" width="100%" height="600px" />
+        <embed class="plot" src="plots/HLVKIEC/500mpc/sky_localization_areas.pdf" type="application/pdf" width="100%" height="600px" />
+        <embed class="plot" src="plots/HLVKIEC/500mpc/theory_vs_observed_mass.pdf" type="application/pdf" width="100%" height="600px" />
+
         <h3 id="mass-50_50">Skymap – 500 Mpc, 50+50</h3>
         <img class="plot" src="plots/HLVKIEC/500mpc/50_50/skymap-1.png" alt="Skymap 50+50">
 
