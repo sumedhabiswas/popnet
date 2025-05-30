@@ -1,7 +1,109 @@
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+from pathlib import Path
 
+# Base paths
+plot_dir = Path("docs/plots/network_comparison")
+html_out = Path("docs/network_comparison.html")
 
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+# Distances and mass combinations to include
+distances = ["500mpc", "750mpc", "1000mpc"]
+masses = ["5+5", "10+10", "20+20", "30+30", "40+40", "50+50"]
+
+# Convert to filename-safe components
+mass_map = {
+    "5+5": ("5.0", "5.0", "5_0", "5_0"),
+    "10+10": ("10.0", "10.0", "10_0", "10_0"),
+    "20+20": ("20.0", "20.0", "20_0", "20_0"),
+    "30+30": ("30.0", "30.0", "30_0", "30_0"),
+    "40+40": ("40.0", "40.0", "40_0", "40_0"),
+    "50+50": ("50.0", "50.0", "50_0", "50_0"),
+}
+
+# HTML page content
+html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Network Comparison</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { padding-top: 4.5rem; }
+    .sidebar { min-height: 100vh; padding: 1rem; background-color: #f8f9fa; }
+    .content-area { padding: 2rem; }
+    .tab-pane img { max-width: 100%; height: auto; margin-bottom: 1rem; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">BBH Simulation</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="ec.html">EC Network</a></li>
+          <li class="nav-item"><a class="nav-link" href="hlv.html">HLV Network</a></li>
+          <li class="nav-item"><a class="nav-link" href="hlvkiec.html">HLVKIEC Network</a></li>
+          <li class="nav-item"><a class="nav-link active" href="network_comparison.html">Network Comparison</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <h4>Comparison</h4>"""
+
+# Sidebar
+for dist in distances:
+    html += f"""
+        <div class="mb-3">
+          <h6>{dist}</h6>
+          <ul class="nav flex-column">"""
+    for mass in masses:
+        anchor = f"{dist}_{mass.replace('+', '')}"
+        html += f"""
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#{anchor}">{mass}</a></li>"""
+    html += """
+          </ul>
+        </div>"""
+
+html += """
+      </div>
+      <div class="col-md-9 content-area tab-content">"""
+
+# Main content with tabs
+for dist in distances:
+    for mass in masses:
+        m1f, m2f, m1s, m2s = mass_map[mass]
+        anchor = f"{dist}_{mass.replace('+', '')}"
+        scatter = f"scatter_mass_m1_{m1f}_m2_{m2f}_{dist}.png"
+        schechter = f"schechter_{m1s}_{m2s}_{dist.replace('mpc', '')}.png"
+        html += f"""
+        <div class="tab-pane fade" id="{anchor}">
+          <h3>{dist} – {mass}</h3>
+          <ul class="nav nav-tabs mt-3" role="tablist">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#{anchor}_mass">Mass Distribution</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#{anchor}_schechter">Schechter</button></li>
+          </ul>
+          <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="{anchor}_mass">
+              <img src="plots/network_comparison/{scatter}" alt="{scatter}" loading="lazy">
+            </div>
+            <div class="tab-pane fade" id="{anchor}_schechter">
+              <img src="plots/network_comparison/{schechter}" alt="{schechter}" loading="lazy">
+            </div>
+          </div>
+        </div>"""
+
+html += """
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>"""
+
+# Write HTML output
+html_out.write_text(html)
+html_out
 
