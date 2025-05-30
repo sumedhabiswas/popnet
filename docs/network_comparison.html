@@ -52,40 +52,63 @@
     <div class="row">
       <div class="col-md-3 sidebar">
         <h4>Comparison</h4>
-        {% for dist in ["500mpc", "750mpc", "1000mpc"] %}
         <div class="mb-3">
-          <h6>{{ dist.replace('mpc', ' Mpc') }}</h6>
+          <h6>500 Mpc</h6>
           <ul class="nav flex-column">
-            {% for mass in ["5+5", "10+10", "20+20", "30+30", "40+40", "50+50"] %}
-            <li class="nav-item"><a class="nav-link" href="#{{ dist }}_{{ mass.replace('+', '_') }}">{{ mass }}</a></li>
-            {% endfor %}
+            <li class="nav-item"><a class="nav-link" href="#500mpc_5_5">5+5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#500mpc_10_10">10+10</a></li>
+            <li class="nav-item"><a class="nav-link" href="#500mpc_20_20">20+20</a></li>
+            <li class="nav-item"><a class="nav-link" href="#500mpc_30_30">30+30</a></li>
+            <li class="nav-item"><a class="nav-link" href="#500mpc_40_40">40+40</a></li>
+            <li class="nav-item"><a class="nav-link" href="#500mpc_50_50">50+50</a></li>
           </ul>
         </div>
-        {% endfor %}
+        <div class="mb-3">
+          <h6>750 Mpc</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#750mpc_5_5">5+5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#750mpc_10_10">10+10</a></li>
+            <li class="nav-item"><a class="nav-link" href="#750mpc_20_20">20+20</a></li>
+            <li class="nav-item"><a class="nav-link" href="#750mpc_30_30">30+30</a></li>
+            <li class="nav-item"><a class="nav-link" href="#750mpc_40_40">40+40</a></li>
+            <li class="nav-item"><a class="nav-link" href="#750mpc_50_50">50+50</a></li>
+          </ul>
+        </div>
+        <div class="mb-3">
+          <h6>1000 Mpc</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#1000mpc_5_5">5+5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#1000mpc_10_10">10+10</a></li>
+            <li class="nav-item"><a class="nav-link" href="#1000mpc_20_20">20+20</a></li>
+            <li class="nav-item"><a class="nav-link" href="#1000mpc_30_30">30+30</a></li>
+            <li class="nav-item"><a class="nav-link" href="#1000mpc_40_40">40+40</a></li>
+            <li class="nav-item"><a class="nav-link" href="#1000mpc_50_50">50+50</a></li>
+          </ul>
+        </div>
       </div>
       <div class="col-md-9 content-area">
         <h2>Network Comparison</h2>
         <p>Select a configuration from the sidebar to compare networks across distances and mass combinations.</p>
 
-        {% for dist in ["500mpc", "750mpc", "1000mpc"] %}
-          {% for mass, m1, m2 in [("5+5", "5.0", "5.0"), ("10+10", "10.0", "10.0"), ("20+20", "20.0", "20.0"), ("30+30", "30.0", "30.0"), ("40+40", "40.0", "40.0"), ("50+50", "50.0", "50.0")] %}
-            <div id="{{ dist }}_{{ mass.replace('+', '_') }}">
-              <h4>{{ dist.replace('mpc', ' Mpc') }} – {{ mass }}</h4>
-              <ul class="nav nav-tabs">
-                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tab1-{{ dist }}-{{ mass.replace('+', '-') }}">Mass Distribution</a></li>
-                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab2-{{ dist }}-{{ mass.replace('+', '-') }}">Schechter</a></li>
-              </ul>
-              <div class="tab-content mt-3">
-                <div class="tab-pane fade show active" id="tab1-{{ dist }}-{{ mass.replace('+', '-') }}">
-                  <img class="plot" src="plots/network_comparison/scatter_mass_m1_{{ m1 }}_m2_{{ m2 }}_{{ dist }}.png">
-                </div>
-                <div class="tab-pane fade" id="tab2-{{ dist }}-{{ mass.replace('+', '-') }}">
-                  <img class="plot" src="plots/network_comparison/schechter_{{ m1.replace('.', '_') }}_{{ m2.replace('.', '_') }}_{{ dist.replace('mpc', '') }}.png">
-                </div>
-              </div>
+        <!-- BEGIN GENERATED PLOTS -->
+        <!-- You can replace this section programmatically using your script -->
+        <!-- Example -->
+        <div id="500mpc_10_10">
+          <h4>500 Mpc – 10+10</h4>
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tab1-500mpc-10-10">Mass Distribution</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab2-500mpc-10-10">Schechter</a></li>
+          </ul>
+          <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="tab1-500mpc-10-10">
+              <img class="plot" src="plots/network_comparison/scatter_mass_m1_10.0_m2_10.0_500mpc.png">
             </div>
-          {% endfor %}
-        {% endfor %}
+            <div class="tab-pane fade" id="tab2-500mpc-10-10">
+              <img class="plot" src="plots/network_comparison/schechter_10_0_10_0_500.png">
+            </div>
+          </div>
+        </div>
+        <!-- END GENERATED PLOTS -->
 
       </div>
     </div>
